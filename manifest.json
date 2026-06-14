@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "FAPP — Monitor & E-mail (Dynamics)",
+  "version": "1.0.0",
+  "description": "Monitora as ocorrências abertas com SLA e badge, e envia e-mails padronizados ao cliente pela fila do Suporte FAPP, direto de cada caso.",
+  "permissions": ["activeTab", "scripting", "storage", "alarms", "notifications"],
+  "optional_host_permissions": ["https://*.dynamics.com/*", "https://*.crm.dynamics.com/*"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "FAPP — Monitor & E-mail",
+    "default_icon": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" }
+  },
+  "options_page": "options.html",
+  "icons": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" }
+}
